@@ -1,0 +1,19 @@
+
+test.c is the main c program to run the Emulator
+
+
+Read the GBA Header Information:
+
+The title is located from byte 0xA0 to 0xAC. (10-15)
+The game code is located from byte 0xAC to 0xB0.
+The maker code (identifying the publisher) is at 0xB0 to 0xB2.
+
+
+GBA uses an ARM7TDMI CPU
+
+Define CPU Registers: The ARM7TDMI has 16 general-purpose registers (R0-R15) and a Program Status Register (CPSR).
+
+-Counter (PC): The PC (register R15)
+
+
+EA00 007F
